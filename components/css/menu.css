@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif !important;
+
+}
+
+#menu-modal{
+    background-color: #0F1210;
+    height: 100vh;
+    display: none;
+    z-index: 1000;
+}
+
+.navbar-modal{
+    height: 10%;
+}
+
+footer{
+    height: 5%;
+    background-color: #0F1210;
+
+}
+
+.section-modal{
+    height: 75%;
+    background-color: #0F1210;
+    
+
+}
+.list{
+    min-width: 60%;
+    padding: 0 20px;
+    margin-left: 0;
+}
+
+
+#title{
+    transform: rotate(-90deg);
+    right: -250px !important;
+    width: 90vh;
+    bottom: 35% ;
+}
+
+#title > h2{
+    font-size: 8rem !important;
+    letter-spacing: 2rem;
+    font-weight: bolder;
+    line-height: 120px !important;
+    color: #FDAA09;
+}
+
+#close{
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.first-arrow{
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.second-arrow{
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.third-arrow{
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/* CSS para quitar el color azul de los enlaces <a> con la clase "chocolate" */
+a.chocolate {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+
+/****************************************************************************** 
+
+Hover animations
+
+- icono de cerrar
+- arrows
+
+******************************************************************************/
+#close:hover{
+    scale: 1.3;
+}
+
+.item-list:hover .first-arrow{
+    translate: 7px -7px;
+}
+
+.first-arrow:hover{
+    color: #FDAA09 !important;
+}
+
+.item-list:hover .second-arrow{
+    translate: 7px -7px;
+}
+
+.item-list:hover{
+    color: #FDAA09 !important;
+}
+
+#third-li:hover .third-arrow{
+    translate: 7px -7px;
+}
+
+#third-li:hover{
+    color: #FDAA09 !important;
+}
+
+
+/****************************************************************************** 
+
+RESPONSIVE SCREEN
+
+******************************************************************************/
+
+@media (min-width: 768px){
+    .list{
+        width: 40%;
+        
+    }
+}
+
+@media (min-width: 902px){
+    a.chocolate{
+        font-size: 3rem;
+    }
+
+    .first-arrow{
+        width: 72px;
+        height: 72px;
+    }
+
+    .second-arrow{
+        width: 72px;
+        height: 72px;
+    }
+
+    .third-arrow{
+        width: 72px;
+        height: 72px;
+    }
+
+    #title{
+        right: -200px !important;
+    }
+
+    #title > h2{
+        font-size:11rem !important;
+    line-height: 160px !important;
+
+    }
+}
+
+
+@media (min-width: 992px){
+    .list{
+        width: 40%;
+    }
+    
+}
+

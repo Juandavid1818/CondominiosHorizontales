@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.ball {
+    width: 20px;
+    height: 20px;
+}
+
+.progress-bar,
+.progress {
+    border-radius: 0 !important;
+}
+
+#art-content{
+    min-height: 260px;
+    align-items: center;
+}
+
+.return-arrow {
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.return-arrow:hover{
+    background-color: #0077cc;
+}
+
+#check-one, #check-two{
+    background-color: #0077cc!important;
+}
+
+#form-container {
+    background: rgba(255, 255, 255, 0.25);
+    color: black;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    margin: 0 auto;
+    min-width: 470px;
+    min-height: 570px;
+}
+
+#return-home{
+    background: #0077cc;
+    color: black;
+}
+
+#return-home:hover{
+    background-color: #0077cc;
+}
+
+#btn{
+    
+    margin: 20px auto !important; 
+    background: #0077cc !important;
+    color: black !important;
+    font-weight: 500 !important;
+    border: #0077cc !important;
+    font-size: 18px !important;
+}
